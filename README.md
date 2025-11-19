@@ -46,6 +46,11 @@ Options:
 vagrant up
 ```
 
+## Prerequisite
+
+- Install vagrant and rust toolchain
+- Ensure you have an ssh key (`~/.ssh/id_rsa.pub` will be import to the vagrant VM)
+
 ## Setup
 
 1 - Build the vagrant VM to host the "server"
@@ -124,6 +129,7 @@ client: sock.recv, transmitting to local tun interface ...
 
 ```sh
 # "VPNServer" - Terminal 3
+
     VPNServer:    Compiling vpn-draft v0.1.0 (/home/vagrant/vpn-draft)
     VPNServer:     Finished `dev` profile [unoptimized + debuginfo] target(s) in 14.08s
 ==> VPNServer: Running provisioner: shell...
