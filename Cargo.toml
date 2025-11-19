@@ -1,0 +1,9 @@
+[package]
+name = "vpn-draft"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.51", features = ["derive"] }
+tokio = { version = "1.48.0", features = ["rt-multi-thread", "time", "tokio-macros"] }
+tun = { version = "0.8.4", features = ["async"]}
